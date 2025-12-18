@@ -65,7 +65,7 @@ const Orientation = () => {
         token: token ? 'Present' : 'Missing'
       });
 
-      const response = await fetch('http://localhost:8000/api/orientation/submit-initial/', {
+      const response = await fetch('http://backend:8000/api/orientation/submit-initial/', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -122,7 +122,7 @@ const Orientation = () => {
       }));
 
       const token = localStorage.getItem('access');
-      const response = await fetch('http://localhost:8000/api/orientation/submit-reponses/', {
+      const response = await fetch('http://backend:8000/api/orientation/submit-reponses/', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -527,7 +527,7 @@ export default Orientation;
 //         token: token ? 'Present' : 'Missing'
 //       });
 
-//       const response = await fetch('http://localhost:8000/api/orientation/submit-initial/', {
+//       const response = await fetch('http://backend:8000/api/orientation/submit-initial/', {
 //         method: 'POST',
 //         headers: {
 //           'Authorization': `Bearer ${token}`
@@ -584,7 +584,7 @@ export default Orientation;
 //       }));
 
 //       const token = localStorage.getItem('access');
-//       const response = await fetch('http://localhost:8000/api/orientation/submit-reponses/', {
+//       const response = await fetch('http://backend:8000/api/orientation/submit-reponses/', {
 //         method: 'POST',
 //         headers: {
 //           'Authorization': `Bearer ${token}`,
