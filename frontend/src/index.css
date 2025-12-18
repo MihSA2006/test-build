@@ -1,0 +1,46 @@
+/* @import "tailwindcss"; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url(/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+    src: url(/fonts/Bebas_Neue/BebasNeue-Regular.ttf) format("truetype"),
+         url(/fonts/Audiowide/Audiowide-Regular.ttf) format("truetype"),
+         url(/fonts/Inter/Inter-VariableFont_opsz,wght.ttf) format("truetype"),
+         url(/fonts/Koulen/Koulen-Regular.ttf) format("truetype"),
+
+    
+    ;
+}
+@font-face {
+    font-family: "Oswald";
+    src: url(/fonts/Oswald/Oswald-VariableFont_wght.ttf);
+    src: url(/fonts/Oswald/Oswald-VariableFont_wght.ttf) format("truetype"),
+         url(/fonts/Audiowide/Audiowide-Regular.ttf) format("truetype"),
+         url(/fonts/Inter/Inter-VariableFont_opsz,wght.ttf) format("truetype"),
+         url(/fonts/Koulen/Koulen-Regular.ttf) format("truetype"),
+
+    
+    ;
+}
+
+.font-beba {
+    font-family:'BebasNeue', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.font-oswald {
+    font-family:'Oswald', Tahoma, Geneva, Verdana, sans-serif
+}
+
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.-letter-space-1 {
+    letter-spacing: -5px;
+}
+.letter-space-1 {
+    letter-spacing: 5px;
+}
