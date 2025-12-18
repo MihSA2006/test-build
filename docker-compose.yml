@@ -1,24 +1,20 @@
 services:
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    expose:
+      - "3000"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
   backend:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: django_backend
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./backend:/app
+    expose:
+      - "8000"
     env_file:
       - ./backend/.env
-    restart: unless-stopped
-
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    container_name: react_frontend
-    ports:
-      - "3000:3000"
-    depends_on:
-      - backend
     restart: unless-stopped
